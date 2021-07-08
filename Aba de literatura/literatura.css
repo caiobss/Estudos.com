@@ -1,0 +1,96 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  color: #f7f1f1;
+}
+
+body {
+  background-color: #17171a;
+}
+
+header {
+  border-bottom: solid 1px #3a3a3a;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  background-color: #17171a;
+}
+
+header, .logo, .menu, .content_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+header, .menu, ul, li {
+  padding: 0 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_disciplinas {
+  background-image: url(freestocks-RgKmrxpIraY-unsplash.jpg);
+  border-bottom: solid 1px #3a3a3a;
+  padding: 290px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 62px;
+}
+
+footer {
+  background-color: #121213;
+  height: 100%;
+  width: 100%;
+}
+
+.footer_txt, #item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-stories, .img-stories {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.click-menu:hover {
+  color: #aca9a9;
+}
+
+#link-know-more {
+  color: #6068e2;
+}
+
+#link-know-more:hover {
+  color: #43499c;
+}
+/*# sourceMappingURL=literatura.css.map */
