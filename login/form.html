@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #17171a;
+            animation-name: animação;
+            animation-duration: 1s;
+        }
+        form{
+            background-color: #474747be;
+            max-width: 500px;
+            width: 390px;
+            height: 68%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .information-login {
+            text-align: center;
+            color: white;
+        }
+        a{
+            color: #6068e2;
+            text-decoration: none;
+        }
+
+        form h3{
+            text-align: center;
+            color:rgb(255, 255, 255) ;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        form input[type=text],
+        form input[type=password]{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+        }
+        form input[type=submit]{
+            width: 100%;
+            height: 45px;
+            cursor: pointer;
+            background-color: rgb(107, 98, 93);
+            color: white;
+            border-radius: 20px;
+        }
+        form input[type=submit]:hover{
+            background-color: rgb(85, 81, 79);
+            transition: 0.5s;
+        }
+        form input:focus{
+            outline: 0;
+        }
+        @keyframes animação{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Entrar em contato</h3>
+        <input id="email" type="text" name="email" placeholder="Digite seu e-mail...">
+        <input id="password" type="password" name='senha' placeholder="Digite sua senha">
+        <input type="submit" name="ação" value="Confirmar">
+        <div class="information-login">
+            <p>Esqueceu a senha? <a href="file:///C:/Users/admin/Documents/Estudos%20html%20css%20e%20JavaScript/Configura%C3%A7%C3%A3o/config.html">Clique aqui.</a></p>
+            <p>Ainda não te conta? <a href="file:///C:/Users/admin/Documents/Estudos%20html%20css%20e%20JavaScript/Configura%C3%A7%C3%A3o/config.html">Crie sua conta qui.</a></p>
+        </div>
+    </form>
+    <script>
+        let email = document.getElementById('email')
+        email.addEventListener('focus',()=>{
+            email.style.borderColor ='rgb(82, 71, 82)'
+        })
+        email.addEventListener('blur',()=>{
+            email.style.borderColor ='#ccc'
+        })
+        ///////////////////////////////
+        let password = document.getElementById('password')
+        password.addEventListener('focus',()=>{
+            password.style.borderColor ='rgb(82, 71, 82)'
+        })
+        password.addEventListener('blur',()=>{
+            password.style.borderColor ='#ccc'
+        })
+    </script>
+</body>
+</html>
