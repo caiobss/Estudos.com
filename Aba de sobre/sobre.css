@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  color: #f7f1f1;
+}
+
+body {
+  background-color: #17171a;
+  -webkit-animation-name: animação;
+          animation-name: animação;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+header {
+  border-bottom: solid 1px #3a3a3a;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  background-color: #17171a;
+}
+
+header, .logo, .menu, .content_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+header, .menu, ul, li {
+  padding: 0 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-content-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#horizontal-page, .principal, #tittle-horizontal, .img-sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 55px;
+}
+
+#horizontal-page, #img-make-of {
+  padding: 27px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#img-sobre {
+  background-image: url("caio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #121213;
+  height: 100%;
+  width: 100%;
+}
+
+.footer_txt, #item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#link-insta-github {
+  color: #6068e2;
+}
+
+#link-insta-github:hover {
+  color: #43499c;
+}
+
+@-webkit-keyframes animação {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animação {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=sobre.css.map */

@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:normal;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(247, 241, 241);
+}
+body{
+    background-color: #17171a;
+    animation-name: animação;
+    animation-duration: 1s;
+}
+header{
+    border-bottom: solid 1px rgb(58, 58, 58);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    background-color: #17171a;
+}
+header,.logo,.menu, .content_menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+header,.menu, ul,li{
+    padding: 0 18px;
+    align-items: center;
+}
+.all-content-information{
+    display: flex;
+    justify-content: center;
+}
+
+#horizontal-page,.principal,#tittle-horizontal,.img-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+}
+#horizontal-page,#img-make-of{
+    padding: 27px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-sobre{
+    background-image: url('caio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+footer{
+    background-color: #121213;
+    height: 100%;
+    width: 100%;
+}
+.footer_txt,#item-footer{
+    display: flex;
+    flex-direction:column;
+    padding: 15px;
+    align-items: center;
+}
+#link-insta-github{
+    color: #6068e2;
+}
+#link-insta-github:hover{
+    color: rgb(67, 73, 156);
+}
+@keyframes animação{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
