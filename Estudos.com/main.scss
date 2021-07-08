@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:normal;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(247, 241, 241);
+}
+body{
+    background-color: #17171a;
+    animation-name: animação;
+    animation-duration: 1s;
+}
+header{
+    border-bottom: solid 1px rgb(58, 58, 58);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    background-color: #17171a;
+}
+header,.logo,.menu, .content_menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+header,.menu, ul,li{
+    padding: 0 18px;
+    align-items: center;
+}
+.all-post, #img-info, .content_disciplinas{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows:70vh 70vh 70vh 30vh;
+    margin-top:62px;
+}
+#information, #tittles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    grid-column:2/4;
+}
+#img-info{
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_disciplinas{
+    background-image: url(matthew-feeney-Nwkh-n6l25w-unsplash.jpg);
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 1px rgb(58, 58, 58);
+    padding: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background-color: #121213;
+    height: 100%;
+    width: 100%;
+}
+.footer_txt,#item-footer{
+    display: flex;
+    flex-direction:column;
+    padding: 15px 10px;
+    align-items: center;
+}
+.click-menu:hover{
+    color: rgb(172, 169, 169);
+}
+#link-know-more{
+    color: rgb(96, 104, 226);
+}
+#link-know-more:hover{
+    color: rgb(67, 73, 156);
+}
+@keyframes animação{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
